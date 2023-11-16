@@ -1,4 +1,5 @@
 import { Sequelize } from "sequelize";
+import config from "../config/config.js";
 
 export const sequelize = new Sequelize(
   config.database,
@@ -7,6 +8,8 @@ export const sequelize = new Sequelize(
   {
     host: config.host,
     port: config.port,
-    dialect: config.dialect,
+    dialect: 'mysql',
   }
 );
+
+export default sequelize;
