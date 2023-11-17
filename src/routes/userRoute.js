@@ -19,16 +19,16 @@ userRoute.post("/sign-up", userSignUp);
 // Login
 userRoute.post("/login", userLogin);
 // Get Detail User
-userRoute.get("/get-detail-user", grantToken, getDetailUser);
+userRoute.get("/get-detail-user", getDetailUser);
 // Get List Of Save Images
-userRoute.get("/get-list-images", grantToken, getListImages);
+userRoute.get("/get-list-images", getListImages);
 // Get List Of Make Images
-userRoute.get("/get-list-images-make", grantToken, getListImagesMake);
+userRoute.get("/get-list-images-make", getListImagesMake);
 // Delete Image By Id_image
-userRoute.delete("/delete-image/:hinh_id", grantToken, deleteImage);
+userRoute.delete("/delete-image/:hinh_id", deleteImage);
 // Update User
 // Update UserInfo
-userRoute.put("/update-userinfo", grantToken, updateUserinfo);
+userRoute.put("/update-userinfo", updateUserinfo);
 // Upload Avatar
 userRoute.put(
   "/upload-avatar",

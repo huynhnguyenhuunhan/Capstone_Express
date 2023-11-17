@@ -9,7 +9,7 @@ const model = initModels(sequelize);
 // Sign Up
 export const userSignUp = async (req, res) => {
   try {
-    const { email, mat_khau, ho_ten, tuoi } = req.body;
+    const { email, mat_khau, ho_ten, tuoi, anh_dai_dien } = req.body;
     const checkEmail = await model.nguoi_dung.findOne({
       where: {
         email,
@@ -23,6 +23,7 @@ export const userSignUp = async (req, res) => {
       mat_khau: bcrypt.hashSync(mat_khau, 10),
       ho_ten,
       tuoi,
+      anh_dai_dien,
     });
     return res.status(201).send("Đăng ký thành công");
   } catch (error) {

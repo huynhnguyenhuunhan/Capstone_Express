@@ -49,7 +49,7 @@ CREATE TABLE `nguoi_dung` (
   `tuoi` int NOT NULL,
   `anh_dai_dien` varchar(100) NOT NULL,
   PRIMARY KEY (`nguoi_dung_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `binh_luan` (`binh_luan_id`, `noi_dung`, `nguoi_dung_id`, `ngay_binh_luan`, `hinh_id`) VALUES
 (1, 'xịn', 1, '2023-10-10 00:00:00', 1);
@@ -105,7 +105,8 @@ INSERT INTO `nguoi_dung` (`nguoi_dung_id`, `email`, `mat_khau`, `ho_ten`, `tuoi`
 (7, 'ken@gmail.com', '123', 'Nguyễn B', 30, 'img7'),
 (8, 'nhan@gmail.com', '123', 'Nguyễn C', 15, 'img8'),
 (9, 'tuan@gmail.com', '123', 'Nguyễn D', 22, 'img9'),
-(10, 'nghia@gmail.com', '123', 'Nguyễn E', 21, 'img10');
+(10, 'nghia@gmail.com', '123', 'Nguyễn E', 21, 'img10'),
+(11, 'abc123@gmail', '$2b$10$4Xv30WjSR04NhxV4WNQ1puHmGiEcKJeQHCVIEB0NDE6hp1myZjXOy', 'Nguyen Van C', 22, 'img11');
 
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
