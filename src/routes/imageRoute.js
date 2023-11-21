@@ -16,15 +16,15 @@ const imageRoute = express.Router();
 // Get All Images
 imageRoute.get("/get-image", grantToken, getImage);
 // Search Image by Name
-imageRoute.get("/search-image", searchImage);
+imageRoute.get("/search-image", grantToken, searchImage);
 // Get Detail Image and User upload
-imageRoute.get("/get-detail-image/:hinh_id", getDetailImage);
+imageRoute.get("/get-detail-image/:hinh_id", grantToken, getDetailImage);
 // Get comment by image_id
-imageRoute.get("/get-comment-image/:hinh_id", getCommentImage);
+imageRoute.get("/get-comment-image/:hinh_id", grantToken, getCommentImage);
 // Get information about whether this image has been saved yet
-imageRoute.get("/get-image-save/:hinh_id", getImageSave);
+imageRoute.get("/get-image-save/:hinh_id", grantToken, getImageSave);
 //  Save comment of user for image
-imageRoute.post("/save-comment/:hinh_id", saveComment);
+imageRoute.post("/save-comment/:hinh_id", grantToken, saveComment);
 // Upload image
 imageRoute.post(
   "/upload-image",

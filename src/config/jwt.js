@@ -17,6 +17,7 @@ export const decodeToken = (token) => jwt.decode(token);
 export const grantToken = async (req, res, next) => {
   try {
     const { token } = req.headers;
+    console.log("token", token);
     checkToken(token);
     next();
   } catch (error) {
