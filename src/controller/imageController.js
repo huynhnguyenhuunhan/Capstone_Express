@@ -168,6 +168,7 @@ export const uploadImage = async (req, res) => {
     });
     return res.status(201).send("Thêm ảnh thành công");
   } catch (error) {
+    console.log(error);
     return res.status(404).send("NOT FOUND");
   }
 };

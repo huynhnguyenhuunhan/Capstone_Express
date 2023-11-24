@@ -132,15 +132,27 @@
 		},
 		{
 			"name": "http://localhost:8080/image/get-image-save/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwNTUyOTI3LCJleHAiOjE3MDA1NTY1Mjd9.Jw0n3zNSTTQO3fJt58dNbgJW9w8-f3yaMiGTeTH9vxg",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwODQyMjA3LCJleHAiOjE3MDA4NDU4MDd9.09rFALtvYYwscQNfY_1q00v_XzkPB0LoU4ynfAvzWek",
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:8080/image/get-image-save/2",
 					"protocol": "http",
@@ -200,7 +212,7 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwNTU2NTYwLCJleHAiOjE3MDA1NjAxNjB9.FrF4xyYMkn6zT74KLxTDuOIwV5cExnwTGsGjiNlx2jc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwODQyMjA3LCJleHAiOjE3MDA4NDU4MDd9.09rFALtvYYwscQNfY_1q00v_XzkPB0LoU4ynfAvzWek",
 						"type": "text"
 					}
 				],
@@ -436,7 +448,7 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwNTU2NTYwLCJleHAiOjE3MDA1NjAxNjB9.FrF4xyYMkn6zT74KLxTDuOIwV5cExnwTGsGjiNlx2jc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwODQyMjA3LCJleHAiOjE3MDA4NDU4MDd9.09rFALtvYYwscQNfY_1q00v_XzkPB0LoU4ynfAvzWek",
 						"type": "text"
 					}
 				],
@@ -444,9 +456,9 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "anh_dai_dien",
+							"key": "file",
 							"type": "file",
-							"src": "/C:/Users/PC/OneDrive - Trường ĐH CNTT - University of Information Technology/Ảnh/Doggie Corgi Wallpapers-16.jpg"
+							"src": "/C:/Users/PC/OneDrive - Trường ĐH CNTT - University of Information Technology/Ảnh/Doggie Corgi Wallpapers-12.jpg"
 						}
 					]
 				},

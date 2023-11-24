@@ -3,6 +3,7 @@ import { sequelize } from "../models/connect.js";
 import initModels from "../models/init-models.js";
 import bcrypt from "bcrypt";
 import { convertToBase } from "./uploadController.js";
+import { optimizeImage } from "./uploadController.js";
 
 const model = initModels(sequelize);
 
@@ -87,6 +88,7 @@ export const getListImages = async (req, res) => {
     });
     return res.status(200).send(listImages);
   } catch (error) {
+    console.log(error);
     return res.status(404).send("Not Found");
   }
 };
@@ -195,6 +197,7 @@ export const uploadAvatar = async (req, res) => {
     );
     return res.send("Upload ảnh đại diện thành công");
   } catch (error) {
+    console.log(error);
     return res.status(404).send("Not Found");
   }
 };
