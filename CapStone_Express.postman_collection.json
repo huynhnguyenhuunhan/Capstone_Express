@@ -212,18 +212,40 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwODQyMjA3LCJleHAiOjE3MDA4NDU4MDd9.09rFALtvYYwscQNfY_1q00v_XzkPB0LoU4ynfAvzWek",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwOTExOTkwLCJleHAiOjE3MDA5MTU1OTB9.qwDD6QNV44vMBgLPfako92NaKX1nBXfIT01dbN9xnVk",
 						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"ten_hinh\":\"naruto\",\r\n    \"duong_dan\":\"https://pops.vn/blog/nhan-thuat-cua-naruto/\",\r\n    \"mo_ta\":\"Hình ảnh naruto\",\r\n    \"nguoi_dung_id\":\"10\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/PC/OneDrive - Trường ĐH CNTT - University of Information Technology/Ảnh/Doggie Corgi Wallpapers-1.png"
+						},
+						{
+							"key": "ten_hinh",
+							"value": "corgisbc",
+							"type": "text"
+						},
+						{
+							"key": "mo_ta",
+							"value": "corgiabcbcbcbcbcb",
+							"type": "text"
+						},
+						{
+							"key": "nguoi_dung_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "hinh_id",
+							"value": "9",
+							"type": "text",
+							"disabled": true
 						}
-					}
+					]
 				},
 				"url": {
 					"raw": "http://localhost:8080/image/upload-image",
@@ -328,7 +350,13 @@
 			"name": "http://localhost:8080/user/get-list-images",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiYWJjMTIzQGdtYWlsIiwibWF0X2toYXUiOiIxMjMifSwiaWF0IjoxNzAwOTExOTkwLCJleHAiOjE3MDA5MTU1OTB9.qwDD6QNV44vMBgLPfako92NaKX1nBXfIT01dbN9xnVk",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "http://localhost:8080/user/get-list-images",
 					"protocol": "http",

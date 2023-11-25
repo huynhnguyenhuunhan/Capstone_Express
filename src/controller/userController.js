@@ -74,7 +74,11 @@ export const getDetailUser = async (req, res) => {
 export const getListImages = async (req, res) => {
   try {
     const { token } = req.headers;
-    const account = decodeToken(token).data;
+
+    const decode = decodeToken(token);
+    if (!decode) return res.status(400).send("Token không hợp lệ");
+
+    const account = decode.data;
     const userInfo = await model.nguoi_dung.findOne({
       where: {
         email: account.email,
